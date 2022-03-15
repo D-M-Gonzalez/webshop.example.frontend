@@ -1,0 +1,21 @@
+.menuBar{
+    background-color: rgb(238, 91, 238);
+    height: 40px;
+    display: flex;
+    padding-left: 50px;
+    flex-direction: row;
+}
+.menuItem{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.logos{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    z-index: 1;
+}

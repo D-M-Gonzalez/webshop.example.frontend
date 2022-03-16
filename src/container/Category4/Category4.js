@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import styles from './Category4.module.css'
 
 function SubList() {
 
@@ -14,18 +15,23 @@ function SubList() {
 
 export default function Category4() {
     const [isVisible, setVisible] = useState(false);
+    const [symbol, setSymbol] = useState("+");
     const nav = useNavigate();
 
     const handleClick = () => {
         isVisible ? setVisible(false) : setVisible(true)
+        isVisible ? setSymbol("+") : setSymbol("-")
         !isVisible && nav("/products/category4")
     }
 
     return (
         <div>
-            <div>
-            <p onClick={handleClick}>Category4</p>
-            { isVisible ? <SubList/> : <></>}
+            <div className={styles.container}>
+                <div className={styles.title}>
+                    <b className={styles.category}><Link to="/products/category4" >Category4</Link></b>
+                    <div className={styles.plus} onClick={handleClick}><b>{symbol}</b></div>
+                </div>
+                { isVisible ? <SubList/> : <></>}
             </div>
         </div>
       )

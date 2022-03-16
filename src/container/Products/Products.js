@@ -1,8 +1,9 @@
 import React from 'react'
 import ProductsMenu from '../ProductsMenu/ProductsMenu'
 import ProductsContainer from '../ProductsContainer/ProductsContainer'
+import LocationBar from '../LocationBar/LocationBar'
 import styles from './Products.module.css'
-import { useNavigate, useLocation} from "react-router-dom";
+import {useLocation} from "react-router-dom";
 
 export default function Products() {
   const location = useLocation();
@@ -10,11 +11,11 @@ export default function Products() {
 
   return (
     <div>
-    <div className={styles.locationBar}>Aca va la barra</div>
-    <div className={styles.products}>
-      <ProductsMenu/>
-      <ProductsContainer url={location.pathname}/>
-    </div>
+      <LocationBar/>
+      <div className={styles.products}>
+        <ProductsMenu/>
+        <ProductsContainer url={location.pathname}/>
+      </div>
     </div>
   )
 }

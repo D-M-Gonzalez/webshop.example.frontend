@@ -1,0 +1,10 @@
+{
+    "items": [
+      { "id": 1, "brand":"Ford", "category":"Sedan", "name": "Ford Focus",  "description": "base focus equipment model" , "image_url":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/2018_Ford_Focus_sedan_%28front%29.jpg/280px-2018_Ford_Focus_sedan_%28front%29.jpg", "price":"10000u$d"},
+      { "id": 2, "brand":"Ford", "category":"Sedan", "name": "Ford Fiesta",  "description": "base fiesta equipment model" , "image_url":"https://upload.wikimedia.org/wikipedia/commons/6/60/2019_Ford_Fiesta_Active_X_Turbo_1.0_Front.jpg", "price":"8000u$d"},
+      { "id": 3, "brand":"Ford", "category":"Sedan", "name": "Ford Ka",  "description": "base ka equipment model" , "image_url":"https://es.wikipedia.org/wiki/Ford_Ka#/media/Archivo:Ford_Figo_Second_Generation_(2016).jpg", "price":"6000u$d"},
+      { "id": 4, "brand":"Ford", "category":"Suv", "name": "Ford Ecosport",  "description": "base Ecosport equipment model" , "image_url":"https://es.wikipedia.org/wiki/Ford_EcoSport#/media/Archivo:2018_Ford_Ecosport_Zetec_facelift_1.0.jpg", "price":"12000u$d"},
+      { "id": 5, "brand":"Ford", "category":"Suv", "name": "Ford Edge",  "description": "base edge equipment model" , "image_url":"https://es.wikipedia.org/wiki/Ford_Edge#/media/Archivo:Ford_Edge_Limited.jpg", "price":"14000u$d"},
+      { "id": 6, "brand":"Ford", "category":"Pickup", "name": "Ford Ranger",  "description": "base ranger equipment model" , "image_url":"https://es.wikipedia.org/wiki/Ford_Ranger#/media/Archivo:2017_Ford_Ranger_Limited.jpg", "price":"13500u$d"}
+    ] 
+  }

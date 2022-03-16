@@ -6,15 +6,11 @@ export default function ContactDropdown() {
 
   return (
     <div className={styles.dropdown}>
-    <div>Inicio</div>
+    <div>Contact Us</div>
     <div className={styles.dropdowncontent}>
-        <div className={styles.dropdownhighlight}><Link to="/inicio/intro" className={styles.link}>¿Quienes somos?</Link></div>
+        <div className={styles.dropdownhighlight}><Link to="/contact" className={styles.link}>Social Media</Link></div>
         <hr className={styles.raya1}></hr>
-        <div className={styles.dropdownhighlight}><Link to="/inicio/equipos" className={styles.link}>Nuestro equipamiento</Link></div>
-        <hr className={styles.raya1}></hr>
-        <div className={styles.dropdownhighlight}><Link to="/inicio/design" className={styles.link}>Nuestros diseños</Link></div>
-        <hr className={styles.raya1}></hr>
-        <div className={styles.dropdownhighlight}><Link to="/inicio/contacto" className={styles.link}>Síguenos</Link></div>
+        <div className={styles.dropdownhighlight}><Link to="/contact" className={styles.link}>About Us</Link></div>
     </div>
 </div>
   )

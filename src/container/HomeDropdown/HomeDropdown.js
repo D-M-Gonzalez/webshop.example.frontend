@@ -6,15 +6,13 @@ export default function HomeDropdown() {
 
   return (
     <div className={styles.dropdown}>
-    <div>Inicio</div>
+    <div>Home</div>
     <div className={styles.dropdowncontent}>
-        <div className={styles.dropdownhighlight}><Link to="/inicio/intro" className={styles.link}>¿Quienes somos?</Link></div>
+        <div className={styles.dropdownhighlight}><Link to="/home/intro" className={styles.link}>Introduction</Link></div>
         <hr className={styles.raya1}></hr>
-        <div className={styles.dropdownhighlight}><Link to="/inicio/equipos" className={styles.link}>Nuestro equipamiento</Link></div>
+        <div className={styles.dropdownhighlight}><Link to="/home/products" className={styles.link}>Our Products</Link></div>
         <hr className={styles.raya1}></hr>
-        <div className={styles.dropdownhighlight}><Link to="/inicio/design" className={styles.link}>Nuestros diseños</Link></div>
-        <hr className={styles.raya1}></hr>
-        <div className={styles.dropdownhighlight}><Link to="/inicio/contacto" className={styles.link}>Síguenos</Link></div>
+        <div className={styles.dropdownhighlight}><Link to="/home/contact" className={styles.link}>Contact Us</Link></div>
     </div>
 </div>
   )

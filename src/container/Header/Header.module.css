@@ -1,4 +1,12 @@
-.App {
-    text-align: center;
-  }
-  
+
+.header{
+    display: flex;
+    background-color:rgb(255, 255, 255);
+    height: 200px;
+    align-items:center;
+    justify-content:center;
+}
+.logo{
+  width: 175px;
+  height: 175px;
+}

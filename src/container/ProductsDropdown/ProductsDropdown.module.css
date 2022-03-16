@@ -1,5 +1,6 @@
 .link{
     text-decoration: none;
+    justify-self: flex-start;
 }
 .dropdown {
     position: relative;
@@ -8,15 +9,13 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  
-
 .dropdowncontent {
     display:none;
     position: absolute;
     top: 29px;
     background-color: rgb(131, 131, 131);
     z-index: 1;
-    height: 223px;
+    height: 224px;
     padding-top: 8px;
     flex-direction:column;
     align-items:center;
@@ -25,9 +24,9 @@
   }
   
 .dropdowncontent div {
-    color: rgb(0, 0, 0);
+    display: flex;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    display: block;
     font-size: 20px;
     font-style: normal;
     font-family: sans-serif;
@@ -35,22 +34,27 @@
     letter-spacing: 2px; 
 }
 .dropdowncontent a {
+    display: flex;
     color: rgb(255, 255, 255);
-    height: 20px;
+    height: 30px;
     width: 200px;
     margin-left: 20px;
     text-decoration: none;
-    display: block;
     font-size: 12px;
     font-style: normal;
     font-family: sans-serif;
     font-weight: bold;
     letter-spacing: 0.5px; 
+    align-items: center;
+    justify-content:flex-start;
 }
 .dropdownhighlight{
+    display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
     height: 20px;
+    align-items: center;
+    justify-content: center;
 }
 .raya1{
     display: flex;
@@ -58,11 +62,34 @@
     height: 1px;
     width: 180px;
 }
+.arrow{
+    padding-right: 10px;
+}
+.sidecontent{
+    display:none;
+    position: absolute;
+    top: 0px;
+    left: 240px;
+    background-color: rgb(131, 131, 131);
+    z-index: 1;
+    height: 285px;
+    padding-top: 8px;
+    flex-direction:column;
+    align-items:center;
+    animation-name: dropdownslide2;
+    animation-duration: 0.2s;
+}
 
 @keyframes dropdownslide{
     from {height: 0px;}
-    to {height: 223px}
+    to {height: 224px}
+}
+@keyframes dropdownslide2{
+    from {height: 0px;}
+    to {height: 285px}
 }
 
 .dropdowncontent div:hover {background-color: rgb(238, 91, 238); transition: background-color 150ms linear;}
-.dropdown:hover .dropdowncontent {display: flex;}
+.dropdown:hover .dropdowncontent {display: block;}
+.dropdown:hover .sidecontent {display: none;}
+.dropdown .dropdowncontent .arrow:hover .sidecontent {display: flex;}

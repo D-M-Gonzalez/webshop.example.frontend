@@ -3,10 +3,8 @@ import React, { useRef, useState, useEffect } from "react";
 import HomeDropdown from "../HomeDropdown/HomeDropdown";
 import ProductsDropdown from "../ProductsDropdown/ProductsDropdown";
 import ContactDropdown from "../ContactDropdown/ContactDropdown";
+import Header from "../Header/Header";
 import styles from "./Layout.module.css"
-import Header from "./Header";
-
-const options = ["Intro", "Equipo", "Diseño", "Redes"];
 
 const Layout = () => {
     

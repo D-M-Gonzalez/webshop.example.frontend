@@ -1,4 +1,11 @@
-.App {
-    text-align: center;
-  }
+.products{
+  display: flex;
+  flex-direction: row;
+}
+.locationBar{
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 20px;
+}
   

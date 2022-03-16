@@ -16,7 +16,7 @@
     top: 29px;
     background-color: rgb(131, 131, 131);
     z-index: 1;
-    height: 223px;
+    height: 110px;
     padding-top: 8px;
     flex-direction:column;
     align-items:center;
@@ -61,7 +61,7 @@
 
 @keyframes dropdownslide{
     from {height: 0px;}
-    to {height: 223px}
+    to {height: 110px}
 }
 
 .dropdowncontent div:hover {background-color: rgb(238, 91, 238); transition: background-color 150ms linear;}

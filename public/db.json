@@ -1,10 +1,27 @@
 {
     "items": [
-      { "id": 1, "brand":"Ford", "category":"Sedan", "name": "Ford Focus",  "description": "base focus equipment model" , "price":"10000u$d"},
-      { "id": 2, "brand":"Ford", "category":"Sedan", "name": "Ford Fiesta",  "description": "base fiesta equipment model" , "price":"8000u$d"},
-      { "id": 3, "brand":"Ford", "category":"Sedan", "name": "Ford Ka",  "description": "base ka equipment model" , "price":"6000u$d"},
-      { "id": 4, "brand":"Ford", "category":"Suv", "name": "Ford Ecosport",  "description": "base Ecosport equipment model" , "price":"12000u$d"},
-      { "id": 5, "brand":"Ford", "category":"Suv", "name": "Ford Edge",  "description": "base edge equipment model" , "price":"14000u$d"},
-      { "id": 6, "brand":"Ford", "category":"Pickup", "name": "Ford Ranger",  "description": "base ranger equipment model" , "price":"13500u$d"}
+      { "id": 1, "brand":"ford", "category":"sedan", "name": "Ford Focus", "image_url": "./img/logo.png",  "description": "base focus equipment model" , "price":"10000u$d"},
+      { "id": 2, "brand":"ford", "category":"sedan", "name": "Ford Fiesta", "image_url": "./img/logo.png",  "description": "base fiesta equipment model" , "price":"8000u$d"},
+      { "id": 3, "brand":"ford", "category":"sedan", "name": "Ford Ka", "image_url": "./img/logo.png",  "description": "base ka equipment model" , "price":"6000u$d"},
+      { "id": 4, "brand":"ford", "category":"suv", "name": "Ford Ecosport", "image_url": "./img/logo.png",  "description": "base Ecosport equipment model" , "price":"12000u$d"},
+      { "id": 5, "brand":"ford", "category":"suv", "name": "Ford Edge", "image_url": "./img/logo.png",  "description": "base edge equipment model" , "price":"14000u$d"},
+      { "id": 6, "brand":"ford", "category":"pickup", "name": "Ford Ranger", "image_url": "./img/logo.png",  "description": "base ranger equipment model" , "price":"13500u$d"},
+      { "id": 7, "brand":"ford", "category":"truck", "name": "Ford F-Max", "image_url": "./img/logo.png",  "description": "base fmax equipment model" , "price":"27000u$d"},
+      { "id": 8, "brand":"peugeot", "category":"sedan", "name": "Peugeot 207", "image_url": "./img/logo.png",  "description": "base 207 equipment model" , "price":"11000u$d"},
+      { "id": 9, "brand":"peugeot", "category":"sedan", "name": "Peugeot 208", "image_url": "./img/logo.png",  "description": "base 208 equipment model" , "price":"11500u$d"},
+      { "id": 10, "brand":"peugeot", "category":"sedan", "name": "Peugeot 308", "image_url": "./img/logo.png",  "description": "base 308 equipment model" , "price":"10000u$d"},
+      { "id": 11, "brand":"peugeot", "category":"sedan", "name": "Peugeot RCZ", "image_url": "./img/logo.png",  "description": "base rcz equipment model" , "price":"15000u$d"},
+      { "id": 12, "brand":"peugeot", "category":"suv", "name": "Peugeot 2008", "image_url": "./img/logo.png",  "description": "base 2008 equipment model" , "price":"13200u$d"},
+      { "id": 13, "brand":"fiat", "category":"sedan", "name": "Fiat Argo", "image_url": "./img/logo.png",  "description": "base argo equipment model" , "price":"9000u$d"},
+      { "id": 14, "brand":"fiat", "category":"sedan", "name": "Fiat Mobi", "image_url": "./img/logo.png",  "description": "base mobi equipment model" , "price":"8000u$d"},
+      { "id": 15, "brand":"fiat", "category":"sedan", "name": "Fiat Uno", "image_url": "./img/logo.png",  "description": "base uno equipment model" , "price":"8500u$d"},
+      { "id": 16, "brand":"fiat", "category":"sedan", "name": "Fiat Cronos", "image_url": "./img/logo.png",  "description": "base cronos equipment model" , "price":"10000u$d"},
+      { "id": 17, "brand":"fiat", "category":"suv", "name": "Fiat Pulse", "image_url": "./img/logo.png",  "description": "base pulse equipment model" , "price":"11000u$d"},
+      { "id": 18, "brand":"fiat", "category":"pickup", "name": "Fiat Strada", "image_url": "./img/logo.png",  "description": "base strada equipment model" , "price":"10000u$d"},
+      { "id": 19, "brand":"fiat", "category":"pickup", "name": "Fiat Toro", "image_url": "./img/logo.png",  "description": "base toro equipment model" , "price":"12000u$d"},
+      { "id": 20, "brand":"chery", "category":"sedan", "name": "Chery QQ", "image_url": "./img/logo.png",  "description": "base qq equipment model" , "price":"7800u$d"},
+      { "id": 21, "brand":"chery", "category":"sedan", "name": "Chery Tiggo", "image_url": "./img/logo.png",  "description": "base tiggo equipment model" , "price":"9700u$d"},
+      { "id": 22, "brand":"chery", "category":"sedan", "name": "Chery Face", "image_url": "./img/logo.png",  "description": "base face equipment model" , "price":"8400u$d"},
+      { "id": 23, "brand":"chery", "category":"suv", "name": "Chery Tiggo 2", "image_url": "./img/logo.png",  "description": "base tiggo 2 equipment model" , "price":"11100u$d"}
     ] 
-  }
+}

@@ -19,26 +19,6 @@ export default function App() {
         <Route path="contact" element={<HomeContact />}/>
       </Route>
       <Route path="products/*" element={<Products />}>
-        <Route path="category1/*" element={<HomeIntro />}>
-          <Route path="subcategory1" element={<HomeProducts />}/>
-          <Route path="subcategory2" element={<HomeProducts />}/>
-          <Route path="subcategory3" element={<HomeProducts />}/>
-          <Route path="subcategory4" element={<HomeProducts />}/>
-          <Route path="subcategory5" element={<HomeProducts />}/>
-        </Route>
-        <Route path="category2/*" element={<HomeProducts />}>
-        <Route path="subcategory1" element={<HomeProducts />}/>
-        <Route path="subcategory2" element={<HomeProducts />}/>
-        </Route>
-        <Route path="category3/*" element={<HomeContact />}>
-        <Route path="subcategory1" element={<HomeProducts />}/>
-        <Route path="subcategory2" element={<HomeProducts />}/>
-        <Route path="subcategory3" element={<HomeProducts />}/>
-        </Route>
-        <Route path="category4/*" element={<HomeContact />}>
-        <Route path="subcategory1" element={<HomeProducts />}/>
-        <Route path="subcategory2" element={<HomeProducts />}/>
-        </Route>
       </Route>
        <Route path="contact" element={<Contact />}/>
       </Route>

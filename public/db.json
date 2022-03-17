@@ -2,9 +2,9 @@
     "items": [
       { "id": 1, "brand":"Ford", "category":"Sedan", "name": "Ford Focus",  "description": "base focus equipment model" , "image_url":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/2018_Ford_Focus_sedan_%28front%29.jpg/280px-2018_Ford_Focus_sedan_%28front%29.jpg", "price":"10000u$d"},
       { "id": 2, "brand":"Ford", "category":"Sedan", "name": "Ford Fiesta",  "description": "base fiesta equipment model" , "image_url":"https://upload.wikimedia.org/wikipedia/commons/6/60/2019_Ford_Fiesta_Active_X_Turbo_1.0_Front.jpg", "price":"8000u$d"},
-      { "id": 3, "brand":"Ford", "category":"Sedan", "name": "Ford Ka",  "description": "base ka equipment model" , "image_url":"https://fotos.perfil.com/2019/07/04/trim/1280/720/ford-ka-749677.jpg", "price":"6000u$d"},
-      { "id": 4, "brand":"Ford", "category":"Suv", "name": "Ford Ecosport",  "description": "base Ecosport equipment model" , "image_url":"https://cdn.motor1.com/images/mgl/wB7XE/s3/lanzamiento-ford-ecosport-made-in-india.webp", "price":"12000u$d"},
-      { "id": 5, "brand":"Ford", "category":"Suv", "name": "Ford Edge",  "description": "base edge equipment model" , "image_url":"https://cdn.motor1.com/images/mgl/kNmEe/s3/ford-edge.jpg", "price":"14000u$d"},
-      { "id": 6, "brand":"Ford", "category":"Pickup", "name": "Ford Ranger",  "description": "base ranger equipment model" , "image_url":"https://fotos.perfil.com/2021/11/26/trim/1280/720/ford-ranger-xl-1275718.jpg", "price":"13500u$d"}
+      { "id": 3, "brand":"Ford", "category":"Sedan", "name": "Ford Ka",  "description": "base ka equipment model" , "image_url":"https://upload.wikimedia.org/wikipedia/commons/6/60/2019_Ford_Fiesta_Active_X_Turbo_1.0_Front.jpg", "price":"6000u$d"},
+      { "id": 4, "brand":"Ford", "category":"Suv", "name": "Ford Ecosport",  "description": "base Ecosport equipment model" , "image_url":"https://upload.wikimedia.org/wikipedia/commons/6/60/2019_Ford_Fiesta_Active_X_Turbo_1.0_Front.jpg", "price":"12000u$d"},
+      { "id": 5, "brand":"Ford", "category":"Suv", "name": "Ford Edge",  "description": "base edge equipment model" , "image_url":"https://upload.wikimedia.org/wikipedia/commons/6/60/2019_Ford_Fiesta_Active_X_Turbo_1.0_Front.jpg", "price":"14000u$d"},
+      { "id": 6, "brand":"Ford", "category":"Pickup", "name": "Ford Ranger",  "description": "base ranger equipment model" , "image_url":"https://upload.wikimedia.org/wikipedia/commons/6/60/2019_Ford_Fiesta_Active_X_Turbo_1.0_Front.jpg", "price":"13500u$d"}
     ] 
   }

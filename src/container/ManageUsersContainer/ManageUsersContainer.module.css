@@ -1,0 +1,20 @@
+.gridContainer{
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: 240px 240px 240px 240px 240px;
+}
+.gridItem{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 200px;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 10px;
+    box-shadow: 3px 3px 5px 5px rgb(224, 224, 224);
+}
+.name{
+    font-size: 25px;
+}

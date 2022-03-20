@@ -1,9 +1,33 @@
+.main{
+    background-color: rgb(240, 240, 240);
+    height: 100%;
+}
+.header{
+    display:block;
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+}
 .menuBar{
-    background-color: rgb(238, 91, 238);
+    position:fixed;
+    top:200px;
+    width: 100%;
+    background-color: rgb(91, 130, 238);
     height: 40px;
     display: flex;
     padding-left: 50px;
+    padding-right: 50px;
     flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+}
+.outlet{
+    position:fixed;
+    width: 100%;
+    top:240px;
+    display: block;
+    height:calc(100% - 240px);
+    overflow: scroll;
 }
 .menuItem{
     padding: 10px;
@@ -18,4 +42,30 @@
     justify-content:center;
     align-items:center;
     z-index: 1;
+}
+.login{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    float:right;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.outlet::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.outlet {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+@media screen and (max-width: 800px){
+    .menuBar{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }

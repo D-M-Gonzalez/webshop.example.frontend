@@ -1,18 +1,18 @@
 import React from "react";
-import Ford from "../Ford/Ford";
-import Fiat from "../Fiat/Fiat";
-import Peugeot from "../Peugeot/Peugeot";
-import Chery from "../Chery/Chery";
 import styles from "./ProductsMenu.module.css";
+import ChevroletSideBar from "../../components/SideBar/ChevroletSideBar/ChevroletSideBar";
+import FiatSideBar from "../../components/SideBar/FiatSideBar/FiatSideBar";
+import FordSideBar from "../../components/SideBar/FordSideBar/FordSideBar";
+import PeugeotSideBar from "../../components/SideBar/PeugeotSideBar/PeugeotSideBar";
 
 export default function ProductsMenu() {
   return (
     <div>
         <div className={styles.Main}>
-            <Ford/>
-            <Peugeot/>
-            <Fiat/>
-            <Chery/>
+            <FordSideBar/>
+            <PeugeotSideBar/>
+            <FiatSideBar/>
+            <ChevroletSideBar/>
         </div>
     </div>
   )

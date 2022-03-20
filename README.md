@@ -1,72 +1,78 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/91450e5b-84af-4fdf-9b8a-20c917ff719d/deploy-status)](https://app.netlify.com/sites/unruffled-rosalind-21eb10/deploys)
 
-# Getting Started with Create React App
+# Front-end APP created for ITCrowd challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Intro
 
-## Available Scripts
+    This APP was created to fullfil the objetives of the challenge. Done using React as main framework this app can handle all the basic communication with a server.
+    It has done with a basic layout, that has a fixed header/navigation bar, and a dynamic main container that changes when the user interacts. It's an SPA APP,
+    which does never forces the user to leave the main page, only using reloads to refresh data from DB.
+    The APP was done trying to use good practices and having SOLID principles in mind, using lastest version React Functional Components.
 
-In the project directory, you can run:
+## Resources
 
-### `npm start`
+- **Basic languages:** HTML/CSS/JavaScript
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Based both Front-end and Back-end in MERN stack.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frameworks:** React.js
 
-### `npm test`
+    Chosed because of experience using it.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Libraries:** 
+    1. Bootstrap: Allowed the creation of some nice buttons and forms with ease.
+    2. Sweet Alert2: It's a nice library to feedback the user.
 
-### `npm run build`
+- **Missing:** It could had been nice to use Material UI, but i do still lack some experience with it and i honestly wanted to show some HTML/CSS skills
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Functionalities
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    The APP can handle most of the basic functionalities of a product catalog. It doesn't have a cart, so it can't be considered a webshop.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **The APP do:**
+    1. Shows a homepage with some carrousel photos, with a dynamic scrolling component.
+    2. Shows all the products with different filters, it does implement a secondary navigation bar to go back and apply new filters.
+    3. Shows a contact form with the basic information.
+    4. Have login functionality, with and Admin view implemented using a JWT token.
+    5. Have Admin View where the user can create/modify/delete products, as well as delete users, with the exception of admin user.
+    6. Have a main animated navigation bar with all the seccions avaliable for easy access, fixed to the initial position.
 
-### `npm run eject`
+## Architecture
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    The APP is divided into:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```mermaid
+    graph LR
+    A[root] --> B[src] --> D[components]
+    A --> C[public] --> G[img]
+    B --> E[container]
+    B --> F[controllers]
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **root:** Contains package data and this readme.
+- **src:** Contains index.js and App.js to handle APP loading.
+- **public:** Contains main page.
+- **img:** Contains favicon.
+- **components:** Contains every react functional component that doesn't have a child, from buttons, forms, dropdowns, etc.
+- **container:** Contains every parent of a functional component, and whose handle page navigation.
+- **controllers:** Contains JS functions to handle communication with the server.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## To-Do List
 
-## Learn More
+    Many features are lacking, as they would take time and there was not enough to implement then.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **cart:** The APP need a cart to be considered a shop.
+- **filters:** Actual filters are basic, they were done without knowing what to store, so changing the filters to manage cars on an easier manner would be almost top priority.
+- **pagination:** Needs some client side pagination to avoid loading all the products at one, with compatibility with filters. 
+- **MaterialUI:** This library would not only optimize the APP but also would give it a better look.
+- **Optimization:** This APP requires optimization, many hooks could be done into custom hooks and many components could be simplified.
+- **Testing:** There should be a testing sessions before going live.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## How to run it
 
-### Code Splitting
+    Simply create a new folder and do run console:
+    > npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Deploy
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    APP is deployed in Netlify, doesn't need to do a production build.

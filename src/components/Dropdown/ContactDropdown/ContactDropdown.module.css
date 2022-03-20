@@ -1,0 +1,76 @@
+.link{
+    text-decoration: none;
+}
+.dropdown {
+    position: relative;
+    display: flex;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+
+.dropdowncontent {
+    display:none;
+    position: absolute;
+    top: 29px;
+    background-color: rgb(218, 218, 218);
+    height: 110px;
+    padding-top: 14px;
+    flex-direction:column;
+    align-items:center;
+    animation-name: dropdownslide;
+    animation-duration: 0.2s;
+  }
+  
+.dropdowncontent div {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-style: normal;
+    font-family: sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px; 
+    margin-top: -8px;
+    margin-bottom: -8px;
+}
+.dropdowncontent a {
+    color: rgb(0, 0, 0);
+    height: 20px;
+    width: 200px;
+    margin-left: 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px; 
+}
+.dropdownhighlight{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 40px;
+}
+.raya1{
+    display: flex;
+    background-color: rgb(65, 65, 65);
+    height: 1px;
+    width: 180px;
+}
+
+@keyframes dropdownslide{
+    from {height: 0px;}
+    to {height: 110px}
+}
+
+@media screen and (max-width: 800px){
+    .dropdown {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+}
+
+.dropdowncontent div:hover {background-color: rgb(138, 138, 138); transition: background-color 150ms linear;}
+.dropdown:hover .dropdowncontent {display: flex;}

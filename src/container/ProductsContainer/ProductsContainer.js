@@ -20,7 +20,7 @@ export default function ProductsContainer() {
         "https://webshop-example-backend.herokuapp.com/api/products?size=999" //Pagination is implemented in the server, but not on client side yet
       );
       const cars = await response.json();
-      setItems(cars.docs);
+      setItems(cars);
       setIsLoaded(true);
     };
     fetchData().catch(console.error);
@@ -36,8 +36,8 @@ export default function ProductsContainer() {
     items && (arr = items);
     const arrURL = URL.pathname.split("/");
     arrURL[2] &&
-      (arr = arr.filter((el) => el.brand.brand_name.includes(arrURL[2])));
-    arrURL[3] && (arr = arr.filter((el) => el.category.includes(arrURL[3])));
+      (arr = arr.filter((el) => el.data.brand.brand_name.includes(arrURL[2])));
+    arrURL[3] && (arr = arr.filter((el) => el.data.category.includes(arrURL[3])));
     setFilterItems(arr);
   };
 
@@ -61,13 +61,13 @@ export default function ProductsContainer() {
               filterItems.map((item) => (
                 <div
                   className={styles.gridItem}
-                  onClick={handleClick(item)}
-                  key={item._id}
+                  onClick={handleClick(item.data)}
+                  key={item.data.id}
                 >
                   <b>
                     <img
                       className={styles.brandimage}
-                      src={item.brand.logo_url}
+                      src={item.data.brand.logo_url}
                       alt="brandimg"
                     ></img>
                   </b>
@@ -75,12 +75,12 @@ export default function ProductsContainer() {
                   <b className={styles.imgDiv}>
                     <img
                       className={styles.image}
-                      src={item.image_url}
+                      src={item.data.image_url}
                       alt="carimage"
                     ></img>
                   </b>
                   <b>
-                    <Badge bg="secondary">Price: {item.price} u$d</Badge>
+                    <Badge bg="secondary">Price: {item.data.price} u$d</Badge>
                   </b>
                 </div>
               ))}
